@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:02:20 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTA6NTc6MjYgQU07Mjg0MQ=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDI6MjAgQU07MTsyOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="rSalarioBrt" type="Real" array="False" size=""/>
+            <declare name="rSalarioLiq" type="Integer" array="False" size=""/>
+            <declare name="rTaxDescInss" type="Real" array="False" size=""/>
+            <declare name="rDescInss" type="Real" array="False" size=""/>
+            <declare name="rVlrPorAula" type="Real" array="False" size=""/>
+            <declare name="iQtdAula" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rVlrPorAula"/>
+            <input variable="iQtdAula"/>
+            <input variable="rTaxDescInss"/>
+            <comment text="Processamento"/>
+            <assign variable="rSalarioBrt" expression="rVlrPorAula * iQtdAula"/>
+            <assign variable="rDescInss" expression="rSalarioBrt * (rTaxDescInss / 100)"/>
+            <assign variable="rSalarioLiq" expression="rSalarioBrt - rDescInss"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Sal&#225;rio bruto R$: &quot; &amp; rSalarioBrt" newline="True"/>
+            <output expression="&quot;Salario Liquido R$:&quot; &amp; rSalarioLiq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

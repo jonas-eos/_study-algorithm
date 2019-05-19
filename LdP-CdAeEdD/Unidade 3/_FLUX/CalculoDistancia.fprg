@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 01:35:48 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzI6MTEgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzU6NDggUE07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="rDist" type="Real" array="False" size=""/>
+            <declare name="rP1PosX" type="Real" array="False" size=""/>
+            <declare name="rP1PosY" type="Real" array="False" size=""/>
+            <declare name="rP2PosX" type="Real" array="False" size=""/>
+            <declare name="rP2PosY" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rP1PosX"/>
+            <input variable="rP2PosX"/>
+            <input variable="rP1PosY"/>
+            <input variable="rP2PosY"/>
+            <comment text="Processamento"/>
+            <assign variable="rDist" expression="((rP2PosX - rP1PosX)^2) + ((rP2PosY + rP1PosY)^2)"/>
+            <comment text="Saida"/>
+            <output expression="&quot;A dist&#226;ncia &#233;: &quot;&amp; rDist" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

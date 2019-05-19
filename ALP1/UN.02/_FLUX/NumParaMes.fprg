@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-13 12:58:19 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTM7MTI6NDg6NDkgQU07Mjg1MQ=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTM7MTI6NTg6MTkgQU07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#245;es"/>
+            <declare name="iNumero" type="Integer" array="False" size=""/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="cMes" type="String" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNumero"/>
+            <comment text="Processamento"/>
+            <if expression="((iNumero &lt; 1) OR (iNumero &gt; 12))">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;N&#250;mero n&#227;o corresponde a nenhum m&#234;s!&quot;"/>
+                </then>
+                <else>
+                    <if expression="iNumero = 1">
+                        <then>
+                            <assign variable="cMes" expression="&quot;Janeiro&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="iNumero = 2">
+                                <then>
+                                    <assign variable="cMes" expression="&quot;Fevereiro&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="iNumero = 3">
+                                        <then>
+                                            <assign variable="cMes" expression="&quot;Mar&#231;o&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="iNumero = 4">
+                                                <then>
+                                                    <assign variable="cMes" expression="&quot;Abril&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="iNumero = 5">
+                                                        <then>
+                                                            <assign variable="cMes" expression="&quot;Maio&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="iNumero = 6">
+                                                                <then>
+                                                                    <assign variable="cMes" expression="&quot;Junho&quot;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="iNumero = 7">
+                                                                        <then>
+                                                                            <assign variable="cMes" expression="&quot;Julho&quot;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="iNumero = 8">
+                                                                                <then>
+                                                                                    <assign variable="cMes" expression="&quot;Agosto&quot;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="iNumero = 9">
+                                                                                        <then>
+                                                                                            <assign variable="cMes" expression="&quot;Setembro&quot;"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <if expression="iNumero = 10">
+                                                                                                <then>
+                                                                                                    <assign variable="cMes" expression="&quot;Outubro&quot;"/>
+                                                                                                </then>
+                                                                                                <else>
+                                                                                                    <if expression="iNumero = 11">
+                                                                                                        <then>
+                                                                                                            <assign variable="cMes" expression="&quot;Novembro&quot;"/>
+                                                                                                        </then>
+                                                                                                        <else>
+                                                                                                            <assign variable="cMes" expression="&quot;Dezembro&quot;"/>
+                                                                                                        </else>
+                                                                                                    </if>
+                                                                                                </else>
+                                                                                            </if>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="cMensagem" expression="&quot;Corresponde ao m&#234;s &quot; &amp; cMes"/>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

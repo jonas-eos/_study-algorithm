@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-09 06:00:17 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMDk7MDU6NTM6NDcgUE07Mjg2Nw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMDk7MDY6MDA6MTcgUE07MTsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iNumero" type="Integer" array="False" size=""/>
+            <input variable="iNumero"/>
+            <if expression="iNumero % 3 = 0 and iNumero % 7 = 0">
+                <then>
+                    <output expression="&quot;O numero &quot; &amp; iNumero &amp; &quot; e divisivel por 3 e 7&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O numero &quot; &amp; iNumero &amp; &quot; nao e divisivel por 3 e 7&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

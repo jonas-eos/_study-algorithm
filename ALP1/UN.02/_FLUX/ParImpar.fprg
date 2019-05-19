@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-16 11:24:34 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6MjI6MjAgQU07MjgzNA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6MjQ6MzQgQU07MTsyOTQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;ao"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="iNumero" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNumero"/>
+            <comment text="Processamento"/>
+            <if expression="((iNumero % 2) = 0)">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;N&#250;mero par&quot;"/>
+                </then>
+                <else>
+                    <assign variable="cMensagem" expression="&quot;N&#250;mero impar&quot;"/>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

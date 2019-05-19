@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:34:03 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MzE6MDcgQU07MjgzMw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MzQ6MDMgQU07MTsyOTQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="iNum" type="Integer" array="False" size=""/>
+            <declare name="rPotencia" type="Real" array="False" size=""/>
+            <declare name="rRaiz" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNum"/>
+            <comment text="Processamento"/>
+            <assign variable="rPotencia" expression="iNum ^ 2"/>
+            <assign variable="rRaiz" expression="sqrt(iNum)"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Quadrado: &quot;&amp; iNum &amp; &quot; = &quot; &amp; rPotencia" newline="True"/>
+            <output expression="&quot;Raiz Quadrada: &quot; &amp; iNum &amp; &quot; = &quot; &amp; rRaiz" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

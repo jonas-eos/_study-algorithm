@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:09:54 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDc6MjEgQU07MjgzMg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDk6NTQgQU07MTsyOTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="iNum1" type="Integer" array="False" size=""/>
+            <declare name="iNum2" type="Integer" array="False" size=""/>
+            <declare name="iNum3" type="Integer" array="False" size=""/>
+            <declare name="iNum4" type="Integer" array="False" size=""/>
+            <declare name="rMedia" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNum1"/>
+            <input variable="iNum2"/>
+            <input variable="iNum3"/>
+            <input variable="iNum4"/>
+            <comment text="Processamento"/>
+            <assign variable="rMedia" expression="(iNum1 + iNum2 + iNum3 + iNum4) / 4"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Media dos quatro n&#250;meros: &quot;&amp; rMedia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

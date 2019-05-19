@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:04:49 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDI6MzEgQU07MjgyOA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDQ6NDkgQU07MTsyOTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="iNum" type="Integer" array="False" size=""/>
+            <declare name="iNumAnter" type="Integer" array="False" size=""/>
+            <declare name="iNumSuces" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNum"/>
+            <comment text="Processamento"/>
+            <assign variable="iNumAnter" expression="iNum - 1"/>
+            <assign variable="iNumSuces" expression="iNum + 1"/>
+            <comment text="Saida"/>
+            <output expression="iNumAnter &amp; &quot; - &quot; &amp; iNum &amp; &quot; - &quot; &amp; iNumSuces" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

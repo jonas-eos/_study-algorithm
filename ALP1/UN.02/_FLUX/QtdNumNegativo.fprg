@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-12 07:01:22 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDY6NTM6MzkgUE07Mjg2Mw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDc6MDE6MjIgUE07MjsyOTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#245;es&#13;&#10;"/>
+            <declare name="iContador" type="Integer" array="False" size=""/>
+            <declare name="iNumero1" type="Integer" array="False" size=""/>
+            <declare name="iNumero2" type="Integer" array="False" size=""/>
+            <declare name="iNumero3" type="Integer" array="False" size=""/>
+            <declare name="iNumero4" type="Integer" array="False" size=""/>
+            <declare name="iNumero5" type="Integer" array="False" size=""/>
+            <comment text="Entradas"/>
+            <input variable="iNumero1"/>
+            <input variable="iNumero2"/>
+            <input variable="iNumero3"/>
+            <input variable="iNumero4"/>
+            <input variable="iNumero5"/>
+            <comment text="Processamentos"/>
+            <assign variable="iContador" expression="0"/>
+            <if expression="iNumero1 &lt; 0">
+                <then>
+                    <assign variable="iContador" expression="iContador + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="iNumero2 &lt; 0">
+                <then>
+                    <assign variable="iContador" expression="iContador + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="iNumero3 &lt; 0">
+                <then>
+                    <assign variable="iContador" expression="iContador + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="iNumero4 &lt; 0">
+                <then>
+                    <assign variable="iContador" expression="iContador + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="iNumero5 &lt; 0">
+                <then>
+                    <assign variable="iContador" expression="iContador + 1"/>
+                </then>
+                <else/>
+            </if>
+            <comment text="Saida"/>
+            <output expression="&quot;Dentro dos n&#250;meros informados, &quot; &amp; iContador &amp; &quot; s&#227;o negativos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

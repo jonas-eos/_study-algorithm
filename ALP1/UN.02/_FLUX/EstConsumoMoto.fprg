@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-12 08:00:15 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDc6NDI6MjEgUE07Mjg1Mw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDg6MDA6MTUgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="cTipoMoto" type="String" array="False" size=""/>
+            <declare name="iPercKm" type="Integer" array="False" size=""/>
+            <declare name="rEstCons" type="Real" array="False" size=""/>
+            <declare name="TIPOA" type="Integer" array="False" size=""/>
+            <assign variable="TIPOA" expression="26"/>
+            <declare name="TIPOB" type="Integer" array="False" size=""/>
+            <assign variable="TIPOB" expression="20"/>
+            <declare name="TIPOC" type="Integer" array="False" size=""/>
+            <assign variable="TIPOC" expression="7"/>
+            <comment text="Entrada"/>
+            <input variable="cTipoMoto"/>
+            <input variable="iPercKm"/>
+            <comment text="Processamento"/>
+            <if expression="((NOT(cTipoMoto  = &quot;A&quot;)) AND (NOT(cTipoMoto  = &quot;a&quot;)) AND (NOT(cTipoMoto  = &quot;B&quot;)) AND (NOT(cTipoMoto  = &quot;b&quot;)) AND&#13;&#10;(NOT(cTipoMoto  = &quot;C&quot;)) AND (NOT(cTipoMoto  = &quot;c&quot;)))">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;Tipo da moto informado &#233; inv&#225;lido!&quot;"/>
+                </then>
+                <else>
+                    <if expression="(cTipoMoto = &quot;A&quot;) or (cTipoMoto = &quot;a&quot;)">
+                        <then>
+                            <assign variable="rEstCons" expression="iPercKm / TIPOA"/>
+                            <assign variable="cMensagem" expression="&quot;O consumo do tipo A ser&#225; de &quot; &amp; rEstCons &amp; &quot; l&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(cTipoMoto = &quot;B&quot;) OR (cTipoMoto = &quot;b&quot;)">
+                                <then>
+                                    <assign variable="rEstCons" expression="iPercKm / TIPOB"/>
+                                    <assign variable="cMensagem" expression="&quot;O consumo do tipo B ser&#225; de &quot; &amp; rEstCons &amp; &quot; l&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="rEstCons" expression="iPercKm / TIPOC"/>
+                                    <assign variable="cMensagem" expression="&quot;O consumo do tipo C ser&#225; de &quot; &amp; rEstCons &amp; &quot; l&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

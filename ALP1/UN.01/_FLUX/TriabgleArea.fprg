@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 10:57:10 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTA6NTM6NDUgQU07MjgzOA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTA6NTc6MTAgQU07MTsyOTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="rAltura" type="Real" array="False" size=""/>
+            <declare name="rArea" type="Real" array="False" size=""/>
+            <declare name="rBase" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rAltura"/>
+            <input variable="rBase"/>
+            <comment text="Processamento"/>
+            <assign variable="rArea" expression="(rBase * rAltura) / 2"/>
+            <comment text="Saida"/>
+            <output expression="&quot;A &#225;rea &#233;: &quot;&amp; rArea" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

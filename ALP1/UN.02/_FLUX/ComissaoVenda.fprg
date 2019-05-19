@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-09 05:37:39 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMDk7MTA6MTc6MTQgQU07Mjg0Mg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMDk7MDU6Mzc6MzkgUE07MTsyOTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cNome" type="String" array="False" size=""/>
+            <declare name="iMatricula" type="Integer" array="False" size=""/>
+            <declare name="rSalarioFixo" type="Real" array="False" size=""/>
+            <declare name="rTotalVendas" type="Real" array="False" size=""/>
+            <declare name="rTxComissao" type="Real" array="False" size=""/>
+            <declare name="rSalarioTotal" type="Real" array="False" size=""/>
+            <input variable="iMatricula"/>
+            <input variable="cNome"/>
+            <input variable="rSalarioFixo"/>
+            <input variable="rTotalVendas"/>
+            <if expression="rTotalVendas &lt; 1500">
+                <then>
+                    <assign variable="rTxComissao" expression="2"/>
+                </then>
+                <else>
+                    <assign variable="rTxComissao" expression="4"/>
+                </else>
+            </if>
+            <assign variable="rSalarioTotal" expression="rSalarioFixo * (1 + (rTxComissao / 100))"/>
+            <output expression="&quot;Nome: &quot; &amp; cNome &amp;&#13;&#10;&quot;Matricula: &quot; &amp; iMatricula &amp;&#13;&#10;&quot;Salario Fixo: &quot; &amp; rSalarioFixo &amp;&#13;&#10;&quot;Salario Total: &quot; &amp; rSalarioTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

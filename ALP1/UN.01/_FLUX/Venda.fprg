@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:30:55 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6Mjc6NTMgQU07MjgzOQ=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MzA6NTUgQU07MTsyOTQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="rPreco" type="Real" array="False" size=""/>
+            <declare name="rTxDesc" type="Real" array="False" size=""/>
+            <declare name="rVlrPagar" type="Real" array="False" size=""/>
+            <declare name="rVlrDesc" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rPreco"/>
+            <input variable="rTxDesc"/>
+            <comment text="Processamento"/>
+            <assign variable="rVlrDesc" expression="rPreco * (rTxDesc / 100 )"/>
+            <assign variable="rVlrPagar" expression="rPreco - rVlrDesc"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Desconto R$: &quot; &amp; rVlrDesc" newline="True"/>
+            <output expression="&quot;Total a pagar R$: &quot; &amp; rVlrPagar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

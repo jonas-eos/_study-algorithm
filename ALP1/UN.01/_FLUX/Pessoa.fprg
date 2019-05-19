@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:39:02 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MzQ6MTYgQU07MjgzNg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6Mzk6MDIgQU07MTsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="cNome" type="String" array="False" size=""/>
+            <declare name="cTelefone" type="String" array="False" size=""/>
+            <declare name="iIdade" type="Integer" array="False" size=""/>
+            <declare name="rAltura" type="Real" array="False" size=""/>
+            <declare name="rPeso" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="cNome"/>
+            <input variable="cTelefone"/>
+            <input variable="iIdade"/>
+            <input variable="rPeso"/>
+            <input variable="rAltura"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Nome: &quot; &amp; cNome" newline="True"/>
+            <output expression="&quot;Telefone: &quot; &amp; cTelefone" newline="True"/>
+            <output expression="&quot;Idade: &quot; &amp; iIdade" newline="True"/>
+            <output expression="&quot;Peso: &quot; &amp; rPeso" newline="True"/>
+            <output expression="&quot;Altura: &quot; &amp; rAltura" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

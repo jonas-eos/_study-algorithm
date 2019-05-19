@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 01:31:59 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6NDA6NDEgQU07MjgzMQ=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzE6NTkgUE07MjsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="iVlrA" type="Integer" array="False" size=""/>
+            <declare name="iVlrB" type="Integer" array="False" size=""/>
+            <declare name="iVlrC" type="Integer" array="False" size=""/>
+            <declare name="rDelta" type="Real" array="False" size=""/>
+            <declare name="rX1" type="Real" array="False" size=""/>
+            <declare name="rX2" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iVlrA"/>
+            <input variable="iVlrB"/>
+            <input variable="iVlrC"/>
+            <comment text="Processamento"/>
+            <assign variable="rDelta" expression="(iVlrB ^ 2) - 4 * iVlrA * iVlrC"/>
+            <assign variable="rX1" expression="((iVlrB * -1) + sqrt(rDelta))/ (2 * iVlrA)"/>
+            <assign variable="rX2" expression="((iVlrB * -1) - sqrt(rDelta)) / (2 * iVlrA)"/>
+            <comment text="Saida"/>
+            <output expression="&quot;O resultado de &quot; &amp; iVlrA &amp; &quot;X^2 + &quot; &amp; iVlrB &amp; &quot;X + &quot;&amp; iVlrC" newline="True"/>
+            <output expression="&quot;X1 = &quot; &amp; rX1" newline="True"/>
+            <output expression="&quot;X2 = &quot; &amp; rX2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

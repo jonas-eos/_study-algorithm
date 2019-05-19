@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:27:41 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MjM6MDkgQU07MjgzNg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6Mjc6NDEgQU07MTsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="ALUGADOSANUAL" type="Integer" array="False" size=""/>
+            <assign variable="ALUGADOSANUAL" expression="80"/>
+            <declare name="MESES" type="Integer" array="False" size=""/>
+            <assign variable="MESES" expression="12"/>
+            <declare name="iQtdLivros" type="Integer" array="False" size=""/>
+            <declare name="rFaturAnual" type="Real" array="False" size=""/>
+            <declare name="rFaturMensal" type="Real" array="False" size=""/>
+            <declare name="rVlrAluguel" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iQtdLivros"/>
+            <input variable="rVlrAluguel"/>
+            <comment text="Processamento"/>
+            <assign variable="rFaturMensal" expression="iQtdLivros * rVlrAluguel"/>
+            <assign variable="rFaturAnual" expression="(iQtdLivros * (ALUGADOSANUAL / 100) * rVlrAluguel) * MESES"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Simulacao 100% alugado no mes R$: &quot;&amp; rFaturMensal" newline="True"/>
+            <output expression="&quot;Simulacao 80% alugado no ano todo mes R$:&quot; &amp; rFaturAnual" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

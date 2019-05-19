@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-16 11:44:14 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6Mzg6NTYgQU07Mjg1MA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6NDQ6MTQgQU07MzsyOTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="iNumero1" type="Integer" array="False" size=""/>
+            <declare name="iNumero2" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNumero1"/>
+            <input variable="iNumero2"/>
+            <comment text="Processamento"/>
+            <if expression="(iNumero2 = iNumero2)">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;Os n&#250;meros s&#227;o iguais.&quot;"/>
+                </then>
+                <else>
+                    <if expression="(iNumero1 &gt; iNumero2)">
+                        <then>
+                            <assign variable="cMensagem" expression="&quot;O n&#250;mero &quot;&amp; iNumero1 &amp; &quot; &#233; o maior.&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="cMensagem" expression="&quot;O n&#250;mero &quot;&amp; iNumero2 &amp; &quot; &#233; o maior.&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

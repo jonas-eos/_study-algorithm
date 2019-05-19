@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-16 11:57:03 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6NTQ6NDggQU07Mjg0OQ=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MTE6NTc6MDMgQU07MTsyOTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="iNumero" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iNumero"/>
+            <comment text="Processamento"/>
+            <if expression="(iNumero = 0)">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;N&#250;mero informado &#233; neutro(0).&quot;"/>
+                </then>
+                <else>
+                    <if expression="(iNumero &gt; 0)">
+                        <then>
+                            <assign variable="cMensagem" expression="&quot;N&#250;mero informado &#233; positivo.&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="cMensagem" expression="&quot;N&#250;mero informado &#233; negativo.&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

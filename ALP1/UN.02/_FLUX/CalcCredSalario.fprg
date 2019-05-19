@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-12 08:45:49 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDg6MjY6NDYgUE07Mjg2Mw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDg6NDU6NDkgUE07MTsyOTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#245;es"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="rVlrCredito" type="Real" array="False" size=""/>
+            <declare name="rSalario" type="Real" array="False" size=""/>
+            <declare name="CREDITOA" type="Integer" array="False" size=""/>
+            <assign variable="CREDITOA" expression="35"/>
+            <declare name="CREDITOB" type="Integer" array="False" size=""/>
+            <assign variable="CREDITOB" expression="50"/>
+            <declare name="CREDITOC" type="Integer" array="False" size=""/>
+            <assign variable="CREDITOC" expression="75"/>
+            <comment text="Entrada"/>
+            <input variable="rSalario"/>
+            <comment text="Processamento"/>
+            <if expression="rSalario &lt; 500">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;N&#227;o t&#234;m direito a cr&#233;dito!&quot;"/>
+                </then>
+                <else>
+                    <if expression="(rSalario &gt; 500) and (rSalario &lt;= 1000)">
+                        <then>
+                            <assign variable="rVlrCredito" expression="rSalario * (1 + (CREDITOA / 100))"/>
+                            <assign variable="cMensagem" expression="&quot;Linha de cr&#233;dito dispon&#237;vel R$: &quot; &amp; rVlrCredito"/>
+                        </then>
+                        <else>
+                            <if expression="(rSalario &gt; 1000) and (rSalario &lt;= 3000)">
+                                <then>
+                                    <assign variable="rVlrCredito" expression="rSalario * (1 + (CREDITOB / 100))"/>
+                                    <assign variable="cMensagem" expression="&quot;Linha de cr&#233;dito dispon&#237;vel R$: &quot; &amp; rVlrCredito"/>
+                                </then>
+                                <else>
+                                    <assign variable="rVlrCredito" expression="rSalario * (1 + (CREDITOC / 100))"/>
+                                    <assign variable="cMensagem" expression="&quot;Linha de cr&#233;dito dispon&#237;vel R$: &quot; &amp; rVlrCredito"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

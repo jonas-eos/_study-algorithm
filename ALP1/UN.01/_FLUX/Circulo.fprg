@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:07:01 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDU6MDAgQU07MjgyNw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MDc6MDEgQU07MTsyOTM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaracao"/>
+            <declare name="rArea" type="Real" array="False" size=""/>
+            <declare name="rPerimetro" type="Real" array="False" size=""/>
+            <declare name="rRaio" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rRaio"/>
+            <comment text="Processamento"/>
+            <assign variable="rArea" expression="PI * rRaio ^ 2"/>
+            <assign variable="rPerimetro" expression="2 * PI * rRaio"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Area: &quot;&amp; rArea" newline="True"/>
+            <output expression="&quot;Perimetro: &quot;&amp; rPerimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

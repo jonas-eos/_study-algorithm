@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-10 11:19:01 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MTA6MTIgQU07MjgyNg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6MTk6MDEgQU07MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara"/>
+            <declare name="TaxaInss" type="Integer" array="False" size=""/>
+            <assign variable="TaxaInss" expression="9"/>
+            <declare name="TaxaFgts" type="Integer" array="False" size=""/>
+            <assign variable="TaxaFgts" expression="8"/>
+            <declare name="TaxaHoraExtra" type="Integer" array="False" size=""/>
+            <assign variable="TaxaHoraExtra" expression="100"/>
+            <declare name="rHrTrab" type="Real" array="False" size=""/>
+            <declare name="rHrExt" type="Real" array="False" size=""/>
+            <declare name="rValPorHrTrab" type="Real" array="False" size=""/>
+            <declare name="rSalarioLiq" type="Real" array="False" size=""/>
+            <declare name="rSalarioBrto" type="Real" array="False" size=""/>
+            <declare name="rInss" type="Real" array="False" size=""/>
+            <declare name="rFgts" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rHrTrab"/>
+            <input variable="rHrExt"/>
+            <input variable="rValPorHrTrab"/>
+            <comment text="Processamento"/>
+            <assign variable="rSalarioBrto" expression="(rHrTrab + rHrExt * (1 + (TaxaHoraExtra / 100))) * rValPorHrTrab"/>
+            <assign variable="rInss" expression="rSalarioBrto * (TaxaInss / 100)"/>
+            <assign variable="rFgts" expression="rSalarioBrto * (TaxaFgts / 100)"/>
+            <assign variable="rSalarioLiq" expression="rSalarioBrto - rInss"/>
+            <comment text="Saida"/>
+            <output expression="&quot;Salario Bruto R$: &quot;&amp; rSalarioBrto" newline="True"/>
+            <output expression="&quot;INSS : &quot; &amp; rInss" newline="True"/>
+            <output expression="&quot;FGTS: &quot; &amp; rFgts" newline="True"/>
+            <output expression="&quot;Salario Liquido R$: &quot;&amp; rSalarioLiq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

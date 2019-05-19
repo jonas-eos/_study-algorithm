@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-12 07:28:28 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDc6MTA6MjUgUE07Mjg1Mg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTI7MDc6Mjg6MjggUE07MjsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="rAltura" type="Real" array="False" size=""/>
+            <declare name="cSexo" type="String" array="False" size=""/>
+            <declare name="rPeso" type="Real" array="False" size=""/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <comment text="Entrada&#13;&#10;"/>
+            <input variable="rAltura"/>
+            <input variable="cSexo"/>
+            <comment text="Processamento"/>
+            <if expression="((cSexo != &quot;M&quot;) AND (cSexo != &quot;m&quot;) AND (cSexo != &quot;F&quot;) AND (cSexo != &quot;f&quot;))">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;Sexo informado errado&quot;"/>
+                </then>
+                <else>
+                    <if expression="cSexo = &quot;M&quot;">
+                        <then>
+                            <assign variable="rPeso" expression="((72.7 * rAltura) -58)"/>
+                            <assign variable="cMensagem" expression="&quot;Para sexo masculino &quot; &amp; rPeso &amp; &quot; kg&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="rPeso" expression="((62.1 * rAltura)- 44.7)"/>
+                            <assign variable="cMensagem" expression="&quot;Para sexo feminino &quot; &amp; rPeso &amp; &quot; kg&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
