@@ -4,10 +4,10 @@ ATV03		-		QtdNumNegativo
 ATV04		-		CalcPesoIdeal
 ATV05		-		EstConsumoMoto
 ATV06		-		CalcCredSalario
-EFI01
-EFI02
-EFI03
-EFI04
+EFI01		-		SeMaiorIdade
+EFI02		-		ClasseEleitor
+EFI03		-		CalculoImc
+EFI04		-		CalcAumentoCargo
 EFI05
 EAV01		-		ParImpar
 EAV02		-		MaiorNum

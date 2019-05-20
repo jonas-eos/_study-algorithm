@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-19 09:07:12 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTk7MDg6NDI6MTMgUE07Mjg2Mg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTk7MDk6MDc6MTIgUE07MTsyOTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="PESOABAIXO" type="Integer" array="False" size=""/>
+            <assign variable="PESOABAIXO" expression="20"/>
+            <declare name="PESOEXCESSO" type="Integer" array="False" size=""/>
+            <assign variable="PESOEXCESSO" expression="30"/>
+            <declare name="PESONORMAL" type="Integer" array="False" size=""/>
+            <assign variable="PESONORMAL" expression="25"/>
+            <declare name="PESOOBESO" type="Integer" array="False" size=""/>
+            <assign variable="PESOOBESO" expression="35"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="rAltura" type="Real" array="False" size=""/>
+            <declare name="rImc" type="Real" array="False" size=""/>
+            <declare name="rPeso" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rPeso"/>
+            <input variable="rAltura"/>
+            <comment text="Processamento"/>
+            <if expression="((rPeso &lt; 0.0) or (rAltura &lt; 0.0))">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;Valor informado inv&#225;lido!&quot;"/>
+                </then>
+                <else>
+                    <assign variable="rImc" expression="((rPeso) / (rAltura ^ 2))"/>
+                    <if expression="(rImc &lt; PESOABAIXO)">
+                        <then>
+                            <assign variable="cMensagem" expression="&quot;Abaixo do peso.&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="((rImc &gt;= PESOABAIXO) and (rImc &lt;= PESONORMAL))">
+                                <then>
+                                    <assign variable="cMensagem" expression="&quot;Normal.&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="((rImc &gt; PESONORMAL) and (rImc &lt;= PESOOBESO))">
+                                        <then>
+                                            <assign variable="cMensagem" expression="&quot;Excesso de peso.&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="cMensagem" expression="&quot;Obesidade morbida.&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

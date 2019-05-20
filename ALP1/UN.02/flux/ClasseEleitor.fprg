@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-16 01:57:36 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MDE6NDk6MTcgQU07Mjg0OA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTY7MDE6NTc6MzYgQU07MTsyOTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="CLASSE1" type="String" array="False" size=""/>
+            <assign variable="CLASSE1" expression="&quot;N&#227;o eleitor!&quot;"/>
+            <declare name="CLASSE2" type="String" array="False" size=""/>
+            <assign variable="CLASSE2" expression="&quot;Eleitor obrigat&#243;rio!&quot;"/>
+            <declare name="CLASSE3" type="String" array="False" size=""/>
+            <assign variable="CLASSE3" expression="&quot;Eleitor facultativo!&quot;"/>
+            <declare name="IDADE1" type="Integer" array="False" size=""/>
+            <assign variable="IDADE1" expression="16"/>
+            <declare name="IDADE2" type="Integer" array="False" size=""/>
+            <assign variable="IDADE2" expression="18"/>
+            <declare name="IDADE3" type="Integer" array="False" size=""/>
+            <assign variable="IDADE3" expression="65"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="iIdade" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="iIdade"/>
+            <comment text="Processamento"/>
+            <if expression="(iIdade &lt; IDADE1)">
+                <then>
+                    <assign variable="cMensagem" expression="CLASSE1"/>
+                </then>
+                <else>
+                    <if expression="((iIdade &gt;= IDADE2) AND (iIdade &lt;= IDADE3))">
+                        <then>
+                            <assign variable="cMensagem" expression="CLASSE2"/>
+                        </then>
+                        <else>
+                            <assign variable="cMensagem" expression="CLASSE3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
