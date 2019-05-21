@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-19 08:01:44 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTk7MDc6MTc6MDggUE07Mjg2Nw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTk7MDg6MDE6NDQgUE07NDsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="MSGPADRAO" type="String" array="False" size=""/>
+            <assign variable="MSGPADRAO" expression="&quot;de idade.&quot;"/>
+            <declare name="MAIORIDADE" type="Integer" array="False" size=""/>
+            <assign variable="MAIORIDADE" expression="18"/>
+            <declare name="IDOSO" type="Integer" array="False" size=""/>
+            <assign variable="IDOSO" expression="65"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="cNome" type="String" array="False" size=""/>
+            <declare name="iIdade" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="cNome"/>
+            <input variable="iIdade"/>
+            <comment text="Processamento"/>
+            <if expression="(iIdade &lt; 0)">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;Inv&#225;lido!&quot;"/>
+                </then>
+                <else>
+                    <if expression="(iIdade &lt; MAIORIDADE)">
+                        <then>
+                            <assign variable="cMensagem" expression="&quot;Menor &quot; &amp; MSGPADRAO"/>
+                        </then>
+                        <else>
+                            <if expression="((iIdade &gt;= MAIORIDADE) AND (iIdade &lt;= IDOSO))">
+                                <then>
+                                    <assign variable="cMensagem" expression="&quot;Maior &quot; &amp; MSGPADRAO"/>
+                                </then>
+                                <else>
+                                    <assign variable="cMensagem" expression="&quot;Idoso.&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

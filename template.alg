@@ -1,6 +1,6 @@
 {*
  * Programa
- * Descriçao
+ * DescriÃ§Ã£o
  *
  *
  * @pacote
@@ -10,15 +10,13 @@
  * @link
  * @desde
  * @dependentes
- *}
-
-{*----------------------------------------------------------------------------*}
+ *----------------------------------------------------------------------------*}
 Algoritmo "name"
 
 {*----------------------------------------------------------------------------*}
 
 {*
- * Cabeçalho e prototipos de procedures e functions
+ * CabeÃ§alho e prototipos de procedures e functions
  * Tipo: Variaveis / constante / includes / definitions / functions / procedures
  *
  * @[tipo_abreviado ex var, const, inc, def, func, proc]
@@ -39,7 +37,7 @@ Inicio
      *
      * Descricao
      *}
-     
+
      limpatela
 
     {*------------------------------------------------------------------------*}
@@ -59,11 +57,11 @@ Fimalgoritmo
 
 {*----------------------------------------------------------------------------*}
 
-{* Implantaçao das Functions *}
+{* ImplantaÃ§Ã£o das Functions *}
 
 {*
- * (_functionTemplate) - Template de fumçao
- * Descrição
+ * (_functionTemplate) - Template de fumï¿½ao
+ * DescriÃ§Ã£o
  *
  * @tipo
  * @pacote
@@ -102,7 +100,7 @@ Fimalgoritmo
 
 {*----------------------------------------------------------------------------*}
 
-{* Implantação dos Procedures *}
+{* ImplantaÃ§Ã£o dos Procedures *}
 
 {*
  * (_procedureTemplate) - Template de procedimento

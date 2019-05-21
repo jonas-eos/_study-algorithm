@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-20 01:28:54 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTM7MDE6NDk6MzMgQU07Mjg0Mw=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjA7MDE6Mjg6NTQgQU07MjsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="cMensagem2" type="String" array="False" size=""/>
+            <declare name="cMensagem3" type="String" array="False" size=""/>
+            <declare name="cCargo" type="String" array="False" size=""/>
+            <declare name="iCod" type="Integer" array="False" size=""/>
+            <declare name="rSalario" type="Real" array="False" size=""/>
+            <declare name="rAumento" type="Integer" array="False" size=""/>
+            <declare name="CARGO1" type="Integer" array="False" size=""/>
+            <assign variable="CARGO1" expression="50"/>
+            <declare name="CARGO2" type="Integer" array="False" size=""/>
+            <assign variable="CARGO2" expression="30"/>
+            <declare name="CARGO3" type="Integer" array="False" size=""/>
+            <assign variable="CARGO3" expression="25"/>
+            <declare name="CARGO4" type="Integer" array="False" size=""/>
+            <assign variable="CARGO4" expression="15"/>
+            <assign variable="cMensagem" expression="&quot;Nenhum cargo correspondente&quot;"/>
+            <assign variable="cMensagem2" expression="&quot; &quot;"/>
+            <assign variable="cMensagem3" expression="&quot; &quot;"/>
+            <comment text="Entrada"/>
+            <input variable="rSalario"/>
+            <input variable="iCod"/>
+            <comment text="Processamento"/>
+            <if expression="(iCod &lt; 0) OR (iCod &gt; 4)">
+                <then/>
+                <else>
+                    <if expression="iCod = 1">
+                        <then>
+                            <assign variable="rAumento" expression="rSalario * (CARGO1 / 100)"/>
+                            <assign variable="cCargo" expression="&quot;Servi&#231;os gerais.&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="iCod = 2">
+                                <then>
+                                    <assign variable="rAumento" expression="rSalario * (CARGO2 / 100)"/>
+                                    <assign variable="cCargo" expression="&quot;Vigia.&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="iCod = 3">
+                                        <then>
+                                            <assign variable="rAumento" expression="rSalario * (CARGO3 / 100)"/>
+                                            <assign variable="cCargo" expression="&quot;Recepcionista.&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="rAumento" expression="rSalario * (CARGO4 / 100)"/>
+                                            <assign variable="cCargo" expression="&quot;Vendedor.&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="rSalario" expression="rSalario + rAumento"/>
+                    <assign variable="cMensagem" expression="&quot;Seu cargo &#233;: &quot; &amp; cCargo"/>
+                    <assign variable="cMensagem2" expression="&quot;Seu aumento &#233;:&quot; &amp; rAumento"/>
+                    <assign variable="cMensagem3" expression="&quot;Seu novo sal&#225;rio &#233;:&quot; &amp; rSalario"/>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+            <output expression="cMensagem2" newline="True"/>
+            <output expression="cMensagem3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
