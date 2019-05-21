@@ -8,7 +8,7 @@ EFI01		-		SeMaiorIdade
 EFI02		-		ClasseEleitor
 EFI03		-		CalculoImc
 EFI04		-		CalcAumentoCargo
-EFI05
+EFI05		-		EquacaoSegundoGrau
 EAV01		-		ParImpar
 EAV02		-		MaiorNum
 EAV03		-		NegativoPositivo
