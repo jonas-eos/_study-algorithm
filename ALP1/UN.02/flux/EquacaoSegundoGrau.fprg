@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-20 09:52:36 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjA7MDk6MzY6MDggUE07Mjg2Mg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjA7MDk6NTI6MzYgUE07MTsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="cMensagem" type="String" array="False" size=""/>
+            <declare name="rA" type="Real" array="False" size=""/>
+            <declare name="rB" type="Real" array="False" size=""/>
+            <declare name="rC" type="Real" array="False" size=""/>
+            <declare name="rDelta" type="Real" array="False" size=""/>
+            <declare name="rX1" type="Real" array="False" size=""/>
+            <declare name="rX2" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="rA"/>
+            <input variable="rB"/>
+            <input variable="rC"/>
+            <comment text="Processamento"/>
+            <if expression="(rA = 0)">
+                <then>
+                    <assign variable="cMensagem" expression="&quot;a n&#227;o pode ser igual &#225; 0.&quot;"/>
+                </then>
+                <else>
+                    <assign variable="rDelta" expression="((rB ^ 2) - 4 * rA * rC)"/>
+                    <if expression="(rDelta &lt; 0)">
+                        <then>
+                            <assign variable="cMensagem" expression="&quot;N&#227;o existe raiz real.&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(rDelta = 0)">
+                                <then>
+                                    <assign variable="rX1" expression="((-rB) / (2 * rA))"/>
+                                    <assign variable="cMensagem" expression="&quot;Raiz &#250;nica x = &quot; &amp; rX1"/>
+                                </then>
+                                <else>
+                                    <assign variable="rX1" expression="(((-rB) + sqrt(rDelta)) / (2 * rA))"/>
+                                    <assign variable="rX2" expression="(((-rB) - sqrt(rDelta)) / (2 * rA))"/>
+                                    <assign variable="cMensagem" expression="&quot;x' = &quot; &amp; rX1 &amp; &quot; x'' = &quot; &amp; rX2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="cMensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
