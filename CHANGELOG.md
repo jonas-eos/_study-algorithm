@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.4.ALFA.0
+
+* Adicionado fluxograma para novo algoritmo em ldP-CdAeEdD/Unidade3/CalcularImc
+
 ## 1.2.3
 
 * Versão final do OrdemDecrescente implentado
