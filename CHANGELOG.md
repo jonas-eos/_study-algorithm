@@ -1,5 +1,17 @@
 # ChangeLog
 
+## 1.3.0
+
+* Versão final do calcularImc
+
+## 1.2.4.ALFA.1
+
+* Adicionado algoritmo calcularImc, fluxograma corrigido
+
+## 1.2.4.ALFA.0
+
+* Adicionado fluxograma para novo algoritmo em ldP-CdAeEdD/Unidade3/CalcularImc
+
 ## 1.2.3
 
 * Versão final do OrdemDecrescente implentado
