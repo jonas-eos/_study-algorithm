@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.4.ALFA.1
+
+* Adicionado algoritmo calculraImc, fluxograma corrigido
+
 ## 1.2.4.ALFA.0
 
 * Adicionado fluxograma para novo algoritmo em ldP-CdAeEdD/Unidade3/CalcularImc
