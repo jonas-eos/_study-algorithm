@@ -1,27 +1,36 @@
+{*
+ * Descrição            Calcular o volume de uma esfera
+ *
+ * @pacote              LdP-CdAeEdD\Unidade3
+ * @autor               Jonas Evangelista (jonas.eos@outlook.com)
+ * @desde               05/08/2019
+ * @version             v2.0.0
+ *----------------------------------------------------------------------------*}
 Algoritmo "CalVolumeEsfera"
-// Disciplina  : -
-// Professor   : -
-// Descrição   : -
-// Autor(a)    : Jonas Envangelista
-// Data atual  : 05/08/2019
+
 Var
-   // Seção de Declarações das variáveis
-   rRaio, rVolume : real
+    volume, raio, raioAoCubo : real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   { Entrada }
-   escreva("Informe o valor do raio")
-   leia(rRaio)
 
-   limpatela
+    {*------------------------------------------------------------------------*}
 
-   { Processamento }
+    {* Entrada *}
+    escreva("Informe o valor do raio: ")
+    leia(raio)
 
-   // volume = (4 / 3) * PI * raio
-   rVolume <- ((4 / 3) * PI * rRaio)
+    limpatela
 
-   { Saida }
-   escreva("Volume = ", rVolume)
+    {*------------------------------------------------------------------------*}
+
+    {* Processamento *}
+
+    raioAoCubo <- (exp(raio, 3))
+    volume <- ((4 * PI * raioAoCubo) / 3)
+
+    {*------------------------------------------------------------------------*}
+
+    {* Saida *}
+    escreva("Volume = ", volume)
 
 Fimalgoritmo

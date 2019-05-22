@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.2
+
+* Atualziado estrutura: LdP-CdAEdD/Unidade3/CalVolumeEsfera
+
 ## 1.2.1
 
 * Atualizado estrutura: LdP-CdAeEdD/Unidade3/CalculoDistancia
