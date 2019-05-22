@@ -1,8 +1,12 @@
 # ChangeLog
 
+## 1.2.3.ALFA.0
+
+* Adicionado fluxograma para novo algoritimo OrdemDecrescente
+
 ## 1.2.2
 
-* Atualziado estrutura: LdP-CdAEdD/Unidade3/CalVolumeEsfera
+* Atualizado estrutura: LdP-CdAEdD/Unidade3/CalVolumeEsfera
 
 ## 1.2.1
 
