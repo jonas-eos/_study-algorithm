@@ -1,8 +1,12 @@
 # ChangeLog
 
+## 1.3.0
+
+* Versão final do calcularImc
+
 ## 1.2.4.ALFA.1
 
-* Adicionado algoritmo calculraImc, fluxograma corrigido
+* Adicionado algoritmo calcularImc, fluxograma corrigido
 
 ## 1.2.4.ALFA.0
 
