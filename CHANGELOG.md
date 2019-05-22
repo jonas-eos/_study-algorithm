@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.3
+
+* Versão final do OrdemDecrescente implentado
+
 ## 1.2.3.BETA.0
 
 * Adicionado algoritmo OrdemDecrescente
