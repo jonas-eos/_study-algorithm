@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-21 11:57:41 PM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjE7MTE6NDk6NDIgUE07Mjg1OA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjE7MTE6NTc6NDEgUE07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="delta" type="Real" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <comment text="Processamento"/>
+            <if expression="(a = 0)">
+                <then>
+                    <assign variable="mensagem" expression="&quot;Conjun&#231;&#227;o a inv&#225;lido, informado valor 0.&quot;"/>
+                </then>
+                <else>
+                    <assign variable="delta" expression="((b ^2) - 4 * a * c)"/>
+                    <if expression="(delta &lt; 0)">
+                        <then>
+                            <assign variable="mensagem" expression="&quot;Delta negativo, raiz n&#227;o &#233; real.&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(delta &lt; 0)">
+                                <then>
+                                    <assign variable="x1" expression="(-b / (2 * a))"/>
+                                    <assign variable="mensagem" expression="&quot;Delta negativo, possui apenas uma raiz x = &quot; &amp; x1"/>
+                                </then>
+                                <else>
+                                    <assign variable="x1" expression="(((-b ^2) + sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="x2" expression="(((-b ^2) - sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="mensagem" expression="&quot;x1 = &quot; &amp; x1 &amp;&#13;&#10;&quot; x2 = &quot; &amp; x2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
