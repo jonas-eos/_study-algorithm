@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Jonas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-22 01:46:08 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjI7MDE6MTE6MjggQU07MjgzNg=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjI7MDE6NDY6MDggQU07MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="valor1" type="Integer" array="False" size=""/>
+            <declare name="valor2" type="Integer" array="False" size=""/>
+            <declare name="valor3" type="Integer" array="False" size=""/>
+            <declare name="menorValor" type="Integer" array="False" size=""/>
+            <declare name="valorDoMeio" type="Integer" array="False" size=""/>
+            <declare name="maiorValor" type="Integer" array="False" size=""/>
+            <comment text="Entrada"/>
+            <input variable="valor1"/>
+            <input variable="valor2"/>
+            <input variable="valor3"/>
+            <comment text="Processamento"/>
+            <if expression="(valor1 = valor2) or (valor2 = valor3) or (valor1 = valor3)">
+                <then>
+                    <assign variable="mensagem" expression="&quot;Existe valor igual.&quot;"/>
+                </then>
+                <else>
+                    <if expression="(valor2 &lt; valor1)">
+                        <then>
+                            <if expression="(valor3 &lt; valor2)">
+                                <then>
+                                    <assign variable="menorValor" expression="valor3"/>
+                                    <assign variable="valorDoMeio" expression="valor2"/>
+                                    <assign variable="maiorValor" expression="valor1"/>
+                                </then>
+                                <else>
+                                    <assign variable="menorValor" expression="valor2"/>
+                                    <if expression="(valor3 &lt; valor1)">
+                                        <then>
+                                            <assign variable="valorDoMeio" expression="valor3"/>
+                                            <assign variable="maiorValor" expression="valor1"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="valorDoMeio" expression="valor1"/>
+                                            <assign variable="maiorValor" expression="valor3"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="(valor3 &lt; valor1)">
+                                <then>
+                                    <assign variable="menorValor" expression="valor3"/>
+                                    <assign variable="valorDoMeio" expression="valor1"/>
+                                    <assign variable="maiorValor" expression="valor2"/>
+                                </then>
+                                <else>
+                                    <assign variable="menorValor" expression="valor1"/>
+                                    <if expression="(valor3 &lt; valor2)">
+                                        <then>
+                                            <assign variable="valorDoMeio" expression="valor3"/>
+                                            <assign variable="maiorValor" expression="valor2"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="valorDoMeio" expression="valor2"/>
+                                            <assign variable="maiorValor" expression="valor3"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="mensagem" expression="&quot;Menor: &quot;&amp; menorValor &amp; &#13;&#10;&quot; do meio: &quot; &amp; valorDoMeio &amp;&#13;&#10;&quot; maior valor: &quot; &amp; maiorValor"/>
+                </else>
+            </if>
+            <comment text="Saida"/>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

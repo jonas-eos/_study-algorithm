@@ -4,32 +4,54 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Jonas"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-10 01:31:59 PM"/>
-        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MTE6NDA6NDEgQU07MjgzMQ=="/>
-        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzE6NTkgUE07MjsyOTYz"/>
+        <attribute name="saved" value="2019-05-22 12:17:07 AM"/>
+        <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjE7MTE6NDk6NDIgUE07Mjg1OA=="/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjI7MTI6MTc6MDcgQU07MzsyOTUx"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="Declaracao"/>
-            <declare name="iVlrA" type="Integer" array="False" size=""/>
-            <declare name="iVlrB" type="Integer" array="False" size=""/>
-            <declare name="iVlrC" type="Integer" array="False" size=""/>
-            <declare name="rDelta" type="Real" array="False" size=""/>
-            <declare name="rX1" type="Real" array="False" size=""/>
-            <declare name="rX2" type="Real" array="False" size=""/>
+            <comment text="Declara&#231;&#227;o"/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="delta" type="Real" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
             <comment text="Entrada"/>
-            <input variable="iVlrA"/>
-            <input variable="iVlrB"/>
-            <input variable="iVlrC"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
             <comment text="Processamento"/>
-            <assign variable="rDelta" expression="(iVlrB ^ 2) - 4 * iVlrA * iVlrC"/>
-            <assign variable="rX1" expression="((iVlrB * -1) + sqrt(rDelta))/ (2 * iVlrA)"/>
-            <assign variable="rX2" expression="((iVlrB * -1) - sqrt(rDelta)) / (2 * iVlrA)"/>
+            <if expression="(a = 0)">
+                <then>
+                    <assign variable="mensagem" expression="&quot;Conjun&#231;&#227;o a inv&#225;lido, informado valor 0.&quot;"/>
+                </then>
+                <else>
+                    <assign variable="delta" expression="((b ^2) - 4 * a * c)"/>
+                    <if expression="(delta &lt; 0)">
+                        <then>
+                            <assign variable="mensagem" expression="&quot;Delta negativo, raiz n&#227;o &#233; real.&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="(delta = 0)">
+                                <then>
+                                    <assign variable="x1" expression="(-b / (2 * a))"/>
+                                    <assign variable="mensagem" expression="&quot;Delta possui apenas uma raiz, x = &quot; &amp; x1"/>
+                                </then>
+                                <else>
+                                    <assign variable="x1" expression="((-b + sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="x2" expression="((-b - sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="mensagem" expression="&quot;x1 = &quot; &amp; x1 &amp;&#13;&#10;&quot; x2 = &quot; &amp; x2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
             <comment text="Saida"/>
-            <output expression="&quot;O resultado de &quot; &amp; iVlrA &amp; &quot;X^2 + &quot; &amp; iVlrB &amp; &quot;X + &quot;&amp; iVlrC" newline="True"/>
-            <output expression="&quot;X1 = &quot; &amp; rX1" newline="True"/>
-            <output expression="&quot;X2 = &quot; &amp; rX2" newline="True"/>
+            <output expression="mensagem" newline="True"/>
         </body>
     </function>
 </flowgorithm>

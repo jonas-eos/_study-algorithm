@@ -1,6 +1,5 @@
 {*
- * Programa
- * Descri√ß√£o
+ * DescriÁ„o
  *
  *
  * @pacote
@@ -9,34 +8,21 @@
  * @lisense
  * @link
  * @desde
- * @dependentes
+ * @ver
  *----------------------------------------------------------------------------*}
 Algoritmo "name"
 
-{*----------------------------------------------------------------------------*}
 
-{*
- * Cabe√ßalho e prototipos de procedures e functions
- * Tipo: Variaveis / constante / includes / definitions / functions / procedures
- *
- * @[tipo_abreviado ex var, const, inc, def, func, proc]
-*}
 var
 
-{*----------------------------------------------------------------------------*}
 
-{* Funcao Inicio *}
 Inicio
 
     {* Constructor *}
 
     {*------------------------------------------------------------------------*}
 
-    {*
-     * Entrada
-     *
-     * Descricao
-     *}
+    {* Entrada *}
 
      limpatela
 
