@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.3.BETA.0
+
+* Adicionado algoritmo OrdemDecrescente
+
 ## 1.2.3.ALFA.0
 
 * Adicionado fluxograma para novo algoritimo OrdemDecrescente
