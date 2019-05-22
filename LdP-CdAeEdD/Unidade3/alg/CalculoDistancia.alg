@@ -1,33 +1,46 @@
+{*
+ * Descrição           Calcular a distancia de dois pontos
+ *
+ * @pacote             LdP-CdAeEdD\Unidade3
+ * @autor              Jonas Evangelista (jonas.eos@outlook.com)
+ * @desde              05/07/2019
+ * @ver                v2.0.0
+ *----------------------------------------------------------------------------*}
 Algoritmo "CalculoDistancia"
-// Disciplina  : -
-// Professor   : -
-// Descrição   : Calcular a distancia de dois pontos
-// Autor(a)    : Jonas Envangelista
-// Data atual  : 05/07/2019
+
 Var
-   // Seção de Declarações das variáveis
-   rDist, rP1PosX, rP1Posy, rP2Posx, rP2Posy : real
+   distanciaDeDoisPontos : real
+   ponto1PosicaoX, ponto1PosicaoY ,ponto2PosicaoX, ponto2PosicaoY : real
+   potenciaPosicaoX : real
+   potenciaPosicaoY : real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   { Entrada }
+
+   {*------------------------------------------------------------------------*}
+
+   {* Entrada *}
    escreva("Informe Posicao x do ponto 1: ")
-   leia(rP1PosX)
+   leia(ponto1PosicaoX)
    escreva("Informe Posicao x do ponto 2: ")
-   leia(rP2PosX)
+   leia(ponto2PosicaoX)
    escreva("Informe Posicao y do ponto 1: ")
-   leia(rP1PosY)
+   leia(ponto1PosicaoY)
    escreva("Informe Posicao y do ponto 2: ")
-   leia(rP2PosY)
+   leia(ponto2PosicaoY)
 
    limpatela
 
-   { Processamento }
-   
-   // distancia = raiz de ((x2 - x1) ^ 2) + ((y2 - y1) ^2))
-   rDist <- raizq(exp((rP2PosX - rP1PosX), 2) + exp((rP2PosY + rP1PosY), 2))
+   {*------------------------------------------------------------------------*}
 
-   { Saida }
-   escreva("A distancia e: ", rDist)
+   {* Processamento *}
+   
+   potenciaPosicaoX <- exp((ponto2PosicaoX - ponto1PosicaoX), 2)
+   potenciaPosicaoY <- exp((ponto2PosicaoY - ponto1PosicaoY), 2)
+   distanciaDeDoisPontos <- raizq(potenciaPosicaoX + potenciaPosicaoY)
+
+   {*------------------------------------------------------------------------*}
+
+   {* Processamento *}
+   escreva("A distancia e: ", distanciaDeDoisPontos)
 
 Fimalgoritmo

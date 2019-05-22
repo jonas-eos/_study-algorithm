@@ -4,28 +4,32 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Jonas"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-10 01:35:48 PM"/>
+        <attribute name="saved" value="2019-05-22 12:44:24 AM"/>
         <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzI6MTEgUE07Mjg0Mw=="/>
-        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMTA7MDE6MzU6NDggUE07MTsyOTY0"/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjI7MTI6NDQ6MjQgQU07MzsyOTUw"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <comment text="Declaracao"/>
-            <declare name="rDist" type="Real" array="False" size=""/>
-            <declare name="rP1PosX" type="Real" array="False" size=""/>
-            <declare name="rP1PosY" type="Real" array="False" size=""/>
-            <declare name="rP2PosX" type="Real" array="False" size=""/>
-            <declare name="rP2PosY" type="Real" array="False" size=""/>
+            <declare name="distanciaDeDoisPontos" type="Real" array="False" size=""/>
+            <declare name="ponto1PosicaoX" type="Real" array="False" size=""/>
+            <declare name="ponto1PosicaoY" type="Real" array="False" size=""/>
+            <declare name="ponto2PosicaoX" type="Real" array="False" size=""/>
+            <declare name="ponto2PosicaoY" type="Real" array="False" size=""/>
+            <declare name="potenciaPosicaoX" type="Real" array="False" size=""/>
+            <declare name="potenciaPosicaoY" type="Real" array="False" size=""/>
             <comment text="Entrada"/>
-            <input variable="rP1PosX"/>
-            <input variable="rP2PosX"/>
-            <input variable="rP1PosY"/>
-            <input variable="rP2PosY"/>
+            <input variable="ponto1PosicaoX"/>
+            <input variable="ponto2PosicaoX"/>
+            <input variable="ponto1PosicaoY"/>
+            <input variable="ponto2PosicaoY"/>
             <comment text="Processamento"/>
-            <assign variable="rDist" expression="((rP2PosX - rP1PosX)^2) + ((rP2PosY + rP1PosY)^2)"/>
+            <assign variable="potenciaPosicaoX" expression="((ponto2PosicaoX - ponto1PosicaoX)^2)"/>
+            <assign variable="potenciaPosicaoY" expression="((ponto2PosicaoY + ponto1PosicaoY)^2)"/>
+            <assign variable="distanciaDeDoisPontos" expression="sqrt(potenciaPosicaoX + potenciaPosicaoY)"/>
             <comment text="Saida"/>
-            <output expression="&quot;A dist&#226;ncia &#233;: &quot;&amp; rDist" newline="True"/>
+            <output expression="&quot;A dist&#226;ncia &#233;: &quot;&amp; distanciaDeDoisPontos" newline="True"/>
         </body>
     </function>
 </flowgorithm>
