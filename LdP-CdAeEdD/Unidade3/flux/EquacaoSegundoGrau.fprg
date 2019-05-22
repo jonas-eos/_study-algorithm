@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Jonas"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-21 11:57:41 PM"/>
+        <attribute name="saved" value="2019-05-22 12:17:07 AM"/>
         <attribute name="created" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjE7MTE6NDk6NDIgUE07Mjg1OA=="/>
-        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjE7MTE6NTc6NDEgUE07MTsyOTY0"/>
+        <attribute name="edited" value="Sm9uYXM7REVTS1RPUC03TFNDT0swOzIwMTktMDUtMjI7MTI6MTc6MDcgQU07MzsyOTUx"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -35,14 +35,14 @@
                             <assign variable="mensagem" expression="&quot;Delta negativo, raiz n&#227;o &#233; real.&quot;"/>
                         </then>
                         <else>
-                            <if expression="(delta &lt; 0)">
+                            <if expression="(delta = 0)">
                                 <then>
                                     <assign variable="x1" expression="(-b / (2 * a))"/>
-                                    <assign variable="mensagem" expression="&quot;Delta negativo, possui apenas uma raiz x = &quot; &amp; x1"/>
+                                    <assign variable="mensagem" expression="&quot;Delta possui apenas uma raiz, x = &quot; &amp; x1"/>
                                 </then>
                                 <else>
-                                    <assign variable="x1" expression="(((-b ^2) + sqrt(delta)) / (2 * a))"/>
-                                    <assign variable="x2" expression="(((-b ^2) - sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="x1" expression="((-b + sqrt(delta)) / (2 * a))"/>
+                                    <assign variable="x2" expression="((-b - sqrt(delta)) / (2 * a))"/>
                                     <assign variable="mensagem" expression="&quot;x1 = &quot; &amp; x1 &amp;&#13;&#10;&quot; x2 = &quot; &amp; x2"/>
                                 </else>
                             </if>
