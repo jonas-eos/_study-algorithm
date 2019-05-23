@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.6.0
+
+* Adicionado iniciais20Nomes em ALP1/UN.03
+
 ## 1.5.0
 
 * Adicionado aprovadosEreprovado em ALP1/UN.03
