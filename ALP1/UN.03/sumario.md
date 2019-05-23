@@ -1,4 +1,5 @@
 PRB1		-		fatorarNumero
+PRB2		-		aprovadosEreprovados
 
 -------------------------------------------------------------------------------
 -	Legenda		-
