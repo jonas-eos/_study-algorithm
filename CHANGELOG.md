@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.4.0
+
+* Adicionado fatorarNumero em ALP1/UN.03
+
 ## 1.3.0
 
 * Versão final do calcularImc
