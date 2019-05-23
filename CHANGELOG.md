@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.7.0
+
+* Adicionado dadosSalaDeAula
+
 ## 1.6.0
 
 * Adicionado iniciais20Nomes em ALP1/UN.03
