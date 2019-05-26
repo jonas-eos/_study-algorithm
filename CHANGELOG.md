@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.9.0
+
+* Adicionado novo algoritmo parImparCalcMedia
+
 ## 1.8.0
 
 * Adicionado novo algoritmo independente maiorMenor
