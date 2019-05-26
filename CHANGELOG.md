@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.13.0
+
+* Adicionado novo algoritmo controleDeEstoque
+
 ## 1.12.0
 
 * Adicionado novo algoritmo inicialNome

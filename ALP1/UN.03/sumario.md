@@ -7,6 +7,7 @@ ATV4            -               parImparCalcMedia
 ATV5            -               divisiveis5Ate200
 ATV6            -               mediaMaiorMenor
 ATV7            -               inicialNome
+ATV8            -               controleDeEstoque
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|
