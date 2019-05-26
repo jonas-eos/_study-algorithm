@@ -3,6 +3,7 @@ PRB2		-		aprovadosEreprovados
 ATV1		-		iniciais20Nomes
 ATV2            -               dadosSalaDeAula
 ATV3            -               maiorMenor
+ATV4            -               parImparCalcMedia
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|
