@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.10.0
+
+* Adicionado novo algoritmo divisiveis5Ate200
+
 ## 1.9.0
 
 * Adicionado novo algoritmo parImparCalcMedia

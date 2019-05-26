@@ -4,6 +4,7 @@ ATV1		-		iniciais20Nomes
 ATV2            -               dadosSalaDeAula
 ATV3            -               maiorMenor
 ATV4            -               parImparCalcMedia
+ATV5            -               divisiveis5Ate200
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|
