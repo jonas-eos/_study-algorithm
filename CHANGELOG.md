@@ -1,8 +1,12 @@
 # ChangeLog
 
+## 1.12.0
+
+* Adicionado novo algoritmo inicialNome
+
 ## 1.11.0
 
-* Adivionado novo algoritmo mediaMaiorMenor
+* Adicionado novo algoritmo mediaMaiorMenor
 
 ## 1.10.0
 
