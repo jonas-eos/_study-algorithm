@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.8.0
+
+* Adicionado novo algoritmo independente maiorMenor
+
 ## 1.7.0
 
 * Adicionado dadosSalaDeAula
