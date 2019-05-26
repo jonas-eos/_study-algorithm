@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.11.0
+
+* Adivionado novo algoritmo mediaMaiorMenor
+
 ## 1.10.0
 
 * Adicionado novo algoritmo divisiveis5Ate200
