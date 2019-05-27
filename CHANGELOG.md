@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.14.0
+
+* Adicionado novo algoritmo maiorMenorNumero
+
 ## 1.13.0
 
 * Adicionado novo algoritmo controleDeEstoque
