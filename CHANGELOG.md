@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.16.0
+
+* Adicionado novo algoritmo somaDeLucro
+
 ## 1.15.0
 
 * Adicionado novo algoritmo somaDeVetores

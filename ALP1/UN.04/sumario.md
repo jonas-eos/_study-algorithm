@@ -1,5 +1,6 @@
 ATV1           -               maiorMenorNumero
 ATV2           -               somaDeVetores
+ATV3           -               somaDeLucro
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|
