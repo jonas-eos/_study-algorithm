@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.17.0
+
+* Adicoinado novo algoritmo diagonalDe5x5
+
 ## 1.16.0
 
 * Adicionado novo algoritmo somaDeLucro

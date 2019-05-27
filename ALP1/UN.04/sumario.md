@@ -1,6 +1,7 @@
 ATV1           -               maiorMenorNumero
 ATV2           -               somaDeVetores
 ATV3           -               somaDeLucro
+ATV4           -               diagonalDe5x5
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|
