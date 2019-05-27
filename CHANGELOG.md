@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.15.0
+
+* Adicionado novo algoritmo somaDeVetores
+
 ## 1.14.0
 
 * Adicionado novo algoritmo maiorMenorNumero
