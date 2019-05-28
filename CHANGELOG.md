@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.21.0
+
+* Adicionado novo algoritmo controleLivro
+
 ## 1.20.0
 
 * Adicionado novo algoritmo contasPagar
