@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.20.0
+
+* Adicionado novo algoritmo contasPagar
+
 # 1.19.0
 
 * Adicionado novo algoritmo somaDiferenca2Matriz
