@@ -1,8 +1,12 @@
 # ChangeLog
 
+## 1.18.0
+
+* Adicionado novo algoritmo alunosAprovados
+
 ## 1.17.0
 
-* Adicoinado novo algoritmo diagonalDe5x5
+* Adicionado novo algoritmo diagonalDe5x5
 
 ## 1.16.0
 
