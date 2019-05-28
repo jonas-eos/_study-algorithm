@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.22.0
+
+* Adicionado novo algoritmo professores Escola
+
 ## 1.21.0
 
 * Adicionado novo algoritmo controleLivro
