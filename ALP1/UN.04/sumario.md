@@ -3,6 +3,7 @@ ATV2           -               somaDeVetores
 ATV3           -               somaDeLucro
 ATV4           -               diagonalDe5x5
 ATV5           -               alunosAprovados
+ATV6           -               somaDiferenca2Matriz
 -------------------------------------------------------------------------------
 -	Legenda		-
 |NOME|		-		|DESCR.|

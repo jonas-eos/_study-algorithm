@@ -1,5 +1,9 @@
 # ChangeLog
 
+# 1.19.0
+
+* Adicionado novo algoritmo somaDiferenca2Matriz
+
 ## 1.18.0
 
 * Adicionado novo algoritmo alunosAprovados
