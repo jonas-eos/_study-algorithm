@@ -1,31 +1,31 @@
 {* 
- * Calcula H de acordo com número fornecido pelo usuário
- * H = 1 + 1/2 + 1/3 + 1/4 + 1/número
+ * Calcula serie de acordo com número fornecido pelo usuário
+ * serie = 1 + 1/2 + 1/3 + 1/4 + 1/número
  *}
 
  algoritmo "exf3-4"
     const
-        NUMERO_INICIAL = 2
+        NUMERO_INICIAL = 1
         FATOR = 1
 
     var
         numero : inteiro
-        h : real
-        contado : inteiro
+        serie : real
+        contador : inteiro
 
     inicio
 
-        h <- 1
+        serie <- 0
 
         escreval("Informe um número:")
         leia(numero)
 
         para contador de NUMERO_INICIAL ate numero passo 1 faca
 
-            h<- h + (FATOR/contado)
+            serie <- serie + (FATOR / contador)
 
         fimpara
 
-        escreval("Resultado: " + numpcarac(h))
+        escreval("Resultado: " + numpcarac(serie))
 
     fimalgoritmo
