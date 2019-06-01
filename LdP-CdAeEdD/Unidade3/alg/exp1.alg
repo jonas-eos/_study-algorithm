@@ -17,7 +17,7 @@
 
     inicio
 
-        somatorio <- 0
+        somatorioNumeros <- 0
         somatorioPeso <- 0
 
         para contador de PRIMEIRO_NUMERO ate ULTIMO_NUMERO passo 1 faca
@@ -25,12 +25,14 @@
             escreval("Informe o " + numpcarac(contador) + "ª número")
             leia(numero)
 
-            somatorioNumeros <- somatorio + (numero * contador)
+            somatorioNumeros <- somatorioNumeros + (numero * contador)
             somatorioPeso <- somatorioPeso + contador
 
         fimpara
 
-        mediaPonderada = somatorioNumeros / somatorioPeso
+        mediaPonderada <- somatorioNumeros / somatorioPeso
+        
+        limpatela
 
         escreval("Média ponderada: " + numpcarac(mediaPonderada))
         
