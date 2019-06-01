@@ -15,9 +15,9 @@ algoritmo "exf3-2"
         escreval("Informe um número")
         leia(numero)
 
-        enquanto contador <= raizQuadrada faca
+        enquanto (contador < numero) faca
 
-            contador <- exp(resultado, 2)
+            contador <- resultado * resultado
             resultado <- resultado + 1
 
         fimenquanto
