@@ -16,7 +16,7 @@
         escreval("Informe o raio do circulo")
         leia(raio)
 
-        area = PI * exp(raio, 2)
+        area <- PI * exp(raio, 2)
 
         escreval("Aréa do valor fornecid é " + numpcarac(area))
 

@@ -3,28 +3,36 @@
  *}
 
  algoritmo "inverte_numero"
-
     var
         numero : inteiro
-        unidade : inteiro
-        dezena : inteiro
-        centena : inteiro
-        numeroInvertido : caracter
-
+        posicaoUnidade : inteiro
+        posicaoDezena : inteiro
+        posicaoCentena : inteiro
+        numeroInvertido : inteiro
+        unidade : caracter
+        dezena : caracter
+        centena : caracter
+        numeroInvertidoCaracter : caracter
 
     inicio
 
         escreval("Informe um número de até 3 digitos:")
         leia(numero)
+        
+        posicaoUnidade <- compr(numpcarac(numero))
+        posicaoDezena <- compr(numpcarac(numero)) - 1
+        posicaoCentena <- compr(numpcarac(numero)) - 2
 
-        unidade <- copia(numero, 1, 1)
-        dezena <- copia(numero, 2, 1)
-        centena <- copia(numero, 3, 1)
+        unidade <- copia(numpcarac(numero), posicaoUnidade, 1)))
+        dezena <- copia(numpcarac(numero), posicaoDezena, 1))
+        centena <- copia(numpcarac(numero), posicaoCentena ,1))
 
-        numeroInvertido <- numpcarac(unidade)
-        numeroInvertido <- numeroInvertido + numpcarac(dezena)
-        numeroInvertido <- numeroInvertido + numpcarac(centena)
+        numeroInvertidoCaracter <- unidade
+        numeroInvertidoCaracter <- numeroInvertidoCaracter + dezena
+        numeroInvertidoCaracter <- numeroInvertidoCaracter + centena
+        
+        numeroInvertido <- caracpnum(numeroInvertidoCaracter)
 
-        escreval("Número invertido: " + numeroInvertido)
+        escreval("Número invertido: " + numpcarac(numeroInvertido))
 
     fimalgoritmo
