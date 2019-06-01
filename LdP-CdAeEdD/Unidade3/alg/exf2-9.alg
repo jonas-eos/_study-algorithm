@@ -29,12 +29,17 @@
         leia(segundoNumero)
 
         escreval("+        -       Adição")
-        escreval("-        -       Subtração")
+        escreval("-        -       Subtração1")
         escreval("*        -       Multiplicação")
         escreval("/        -       Divisão")
         escreval("---------------------------------")
         escreval("Das oções acima, escolha qual operação deseja realizar")
         leia(operacao)
+        
+        limpatela
+        
+        escreva(numpcarac(primeiroNumero) + " " + operacao + " ")
+        escreva(numpcarac(segundoNumero) + " = ")
 
         escolha (operacao)
 
