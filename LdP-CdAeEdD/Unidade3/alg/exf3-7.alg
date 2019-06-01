@@ -3,9 +3,9 @@
  * mostrar qual foi o maior e o menor valor
 *}
 
-algoritmo
+algoritmo "maior_menor_numero"
 
-    cosnt
+    const
         PRIMEIRA_LEITURA = 1
         QUANTIDADE_DE_LEITURA = 20
 
@@ -17,12 +17,12 @@ algoritmo
 
     inicio
 
-        para contador de PRIMEIRA_LEITURA ate QUANTIDADE_DE_LEITURA pass 1 faca
+        para contador de PRIMEIRA_LEITURA ate QUANTIDADE_DE_LEITURA passo 1 faca
 
             escreval("Informe o " + numpcarac(contador) + " º número")
             leia(numero)
 
-            se((contador = PRIMEIRA_LEITURA) entao
+            se(contador = PRIMEIRA_LEITURA) entao
 
                 menorNumero <- numero
                 maiorNumero <- numero
@@ -43,7 +43,7 @@ algoritmo
             fimse
         fimpara
 
-    escreval("Maior número" + numpcarac(maiorNumero))
-    escreval("Menor número" + numpcarac(menorNumero))
+    escreval("Maior número " + numpcarac(maiorNumero))
+    escreval("Menor número " + numpcarac(menorNumero))
 
     fimalgoritmo
