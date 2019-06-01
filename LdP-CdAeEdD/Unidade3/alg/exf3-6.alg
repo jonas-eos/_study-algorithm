@@ -13,20 +13,23 @@
         contador : inteiro
         fibonacci : inteiro
         termoAnterior : inteiro
+        termoAtual : inteiro
 
     inicio
 
         fibonacci <- 0
         termoAnterior <- 0
         termoAtual <- 1
+        
+        escreval("Fator fibonacci em 1")
 
         para contador de NUMERO_INICIAL ate TERMO_FINAL passo 1 faca
-
+            
             fibonacci <- termoAnterior + termoAtual
-
+            
             escreval(numpcarac(fibonacci))
 
-            termoAnteior <- termoAtual
+            termoAnterior <- termoAtual
             termoAtual <- fibonacci
 
         fimpara
