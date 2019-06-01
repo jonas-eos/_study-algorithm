@@ -11,8 +11,8 @@
 
     const
         PESO_ABAIXO = 18.5
-        PESO_NORMAL = 18.5 25
-        PESO_ACIMA = 25 30
+        PESO_NORMAL = 18.5
+        PESO_ACIMA = 25
         OBESO = 30
 
     var
@@ -42,7 +42,7 @@
 
         fimse
 
-        se ((imc > PESO_NORMAL) e (peso < OBESO)) entao
+        se ((imc > PESO_ACIMA) e (imc < OBESO)) entao
 
             escreval("Acima do peso")
 
@@ -50,7 +50,7 @@
 
         se (imc > OBESO) entao
         
-            escreval("Obeso");
+            escreval("Obeso")
 
         fimse
 
