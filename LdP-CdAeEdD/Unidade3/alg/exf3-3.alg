@@ -13,20 +13,24 @@ algoritmo "exf3-3"
 
     inicio
 
-        divisor = NUMERO_INICIAL
-        contador = 0
+        contador <- 0
 
         escreval("Informe o número:")
         leia(numero)
-
-        enquanto (divisor mod numero <> 0) e (contador < 1) faca
+        
+        para divisor de NUMERO_INICIAL ate numero passo 1 faca
+        
+            se (numero mod divisor = 0) entao
+            
+                contador <- contador + 1
+                
+            fimse
             
             divisor <- divisor + 1
-            contador <- contador + 1
+            
+        fimpara
 
-        fimenquanto
-
-        se(contador == 1) entao
+        se(contador = 1) entao
 
             escreval("Número primo")
 
