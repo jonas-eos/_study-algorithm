@@ -25,6 +25,6 @@
 
         fimpara
 
-        escreval("Resultado do fator: " + numpacarac(fator))
+        escreval("Resultado do fator: " + numpcarac(fator))
 
     fimalgoritmo
