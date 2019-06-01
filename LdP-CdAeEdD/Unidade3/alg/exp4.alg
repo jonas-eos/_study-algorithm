@@ -9,14 +9,12 @@
  algoritmo "operacoes_combistuvel"
 
     var
-
         capacidadeTanque : real
         consumoEfetuado : real
         litrosAbastecido : real
         quilometragemPecorrida : real
         autonomiaReal : real
         autonomiaQueRestava : real
-
         combustivelEmTanquePreAbastecimento : real
 
     inicio
@@ -27,16 +25,16 @@
         escreval("Informe quanto abasteceu")
         leia(litrosAbastecido)
 
-        consumoEfetuado <- litrosAbastecidos
+        consumoEfetuado <- litrosAbastecido
 
-        escreval("Informe a quilometragem pecorrida desde o último abastecimento)
+        escreval("Informe a quilometragem pecorrida desde o último abastecimento")
         leia(quilometragemPecorrida)
 
         combustivelEmTanquePreAbastecimento <- capacidadeTanque - consumoEfetuado
 
-        autonomiaReal <- quilometragemPecorrida / combustivelEmTanquePreAbastecimento
+        autonomiaReal <- quilometragemPecorrida / consumoEfetuado
 
-        autonomiaQueRestava <- autonomiaReal * consumoEfetuado
+        autonomiaQueRestava <- autonomiaReal * combustivelEmTanquePreAbastecimento
 
         escreval("Seu consumo desde de o último abastecimento: " + numpcarac(consumoEfetuado))
         escreval("Autonomia que ainda restava: " + numpcarac(autonomiaQueRestava) + " Km/l")
