@@ -24,7 +24,7 @@
 
     inicio
 
-        escreva("Informe o mês")
+        escreva("Informe o mês ")
         leia(mes)
 
         escolha(mes)
