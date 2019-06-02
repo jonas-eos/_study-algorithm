@@ -26,7 +26,7 @@
 
         senao
 
-            se ((idade > ELEITOR_OBRIGATORIO) e (idade <= ELEITOR_FACULTATIVO) entao
+            se ((idade > ELEITOR_OBRIGATORIO) e (idade < ELEITOR_FACULTATIVO)) entao
 
                 escreval("Eleitor obrigatório.")
 
