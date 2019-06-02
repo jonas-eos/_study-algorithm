@@ -23,20 +23,20 @@
         escreval("Informe o segundo número")
         leia(segundoNumero)
 
-        enquanto ((primeiroNumero <> 1) e (segundoNumero <> 1)) faca
+        enquanto ((primeiroNumero > 1) ou (segundoNumero > 1)) faca
 
             ehDivisivel <- falso
 
-            se (nao (primeiroNumero mod multiplo)) entao
+            se (primeiroNumero mod multiplo = 0) entao
 
-                primeiroNumero <- primeiroNumero / multiplo
+                primeiroNumero <- primeiroNumero div multiplo
                 ehDivisivel <- verdadeiro
 
             fimse
 
-            se (nao (segundoNumero mod multiplo)) entao
+            se (segundoNumero mod multiplo = 0) entao
 
-                segundoNumero <- segundoNumero / multiplo
+                segundoNumero <- segundoNumero div multiplo
                 ehDivisivel <- verdadeiro
 
             fimse
@@ -44,10 +44,13 @@
             se(ehDivisivel) entao
                 
                 mmc <- mmc * multiplo
+                
+            senao
+
+                multiplo <- multiplo + 1
 
             fimse
 
-            multiplo <- multiplo + 1
 
         fimenquanto
 
