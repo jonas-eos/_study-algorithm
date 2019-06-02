@@ -14,7 +14,6 @@
         dia : inteiro
         mes : inteiro
         ano : inteiro
-        ehAnoBisexto : logico
 
     inicio
 
@@ -22,10 +21,10 @@
         escreval("Informe o dia")
         leia(dia)
 
-        escreval("Informe o mês)
+        escreval("Informe o mês")
         leia(mes)
 
-        escreval("Informe o ano)
+        escreval("Informe o ano")
         leia(ano)
 
         se ((mes > 0) e (mes < 13)) entao
@@ -34,7 +33,7 @@
 
                 caso 4, 6, 9, 11
 
-                    se (dia > 1) e (dia < MES_30) entao
+                    se (dia > 1) e (dia <= MES_30) entao
                         
                         escreval ("Data válida")
 
@@ -46,9 +45,9 @@
 
                 caso 2
 
-                    se (ano mod 4 = 0) e (ano mod 400 = 0) entao
+                    se ((ano mod 4 = 0) ou (ano mod 400 = 0)) entao
 
-                        se (dia > 1) e (dia < FEVEREIRO_BISEXTO) entao
+                        se (dia > 1) e (dia <= FEVEREIRO_BISEXTO) entao
                         
                             escreval ("Data válida")
 
@@ -60,7 +59,7 @@
                     
                     senao
 
-                        se (dia > 1) e (dia < FEVEREIRO) entao
+                        se (dia > 1) e (dia <= FEVEREIRO) entao
                         
                             escreval ("Data válida")
 
@@ -69,10 +68,12 @@
                             escreval ("Dia inválida")
 
                         fimse
+                        
+                    fimse
 
                 outrocaso
 
-                    se (dia > 1) e (dia < MES_31) entao
+                    se (dia > 1) e (dia <= MES_31) entao
                         
                         escreval ("Data válida")
 
