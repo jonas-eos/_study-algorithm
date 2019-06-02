@@ -32,13 +32,13 @@
         escreval("Informe o ano de nascimento")
         leia(anoNascimento)
 
-        escreval("Informe o dia atual)
+        escreval("Informe o dia atual")
         leia(diaAtual)
 
-        escreval("Informe o mês atual)
+        escreval("Informe o mês atual")
         leia(mesAtual)
 
-        escreval("Informe o ano atual)
+        escreval("Informe o ano atual")
         leia(anoAtual)
 
         idadeEmDias <- anoAtual - anoNascimento
@@ -49,10 +49,10 @@
 
         idadeEmMeses <- idadeEmDias / MEDIA_DIAS_ANO
 
-        idadeEmAnos < idadeEmMeses / MESES_TOTAL_NO_ANO
+        idadeEmAnos <- idadeEmMeses / MESES_TOTAL_NO_ANO
 
         escreval("Idade em dias:" + numpcarac(idadeEmDias))
-        escraval("Idade em meses:" + numpcarac(idadeEmMeses))
+        escreval("Idade em meses:" + numpcarac(idadeEmMeses))
         escreval("idade em anos:" + numpcarac(idadeEmAnos))
 
     fimalgoritmo
