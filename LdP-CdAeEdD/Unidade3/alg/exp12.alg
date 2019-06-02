@@ -1,10 +1,6 @@
-[* Jogo de perguntas e resposta
+{* Jogo de perguntas e resposta
  * Perguntas para identificar o animal escolhido:
- * É mamifero?
- * É quadrúpede?
- * É carnívoro?
- * É herbívoro?
-*]
+*}
 
 algoritmo "jogo_adivinhacao"
 
@@ -12,8 +8,20 @@ algoritmo "jogo_adivinhacao"
         resposta : caracter
 
     inicio
+    
+        escreval("---------------------------------------------")
+        escreval("Vou adivinha qual você escolheu deste grupo")
+        escreval("---------------------------------------------")
+        escreval("Leão   cavalo   homem   macaco   morcego")
+        escreval("baleia   avestruz   pinguim   pato   águia")
+        escreval("tartaruga   crocodilo   cobra")
+        escreval("---------------------------------------------")
+        escreval("bora?")
+        escreval("---------------------------------------------")
+        escreval("Responda sim caso positivo, ou não caso negativo")
 
         escreval("É mamífero?")
+        leia(resposta)
 
             se (minusc(resposta) = "sim") entao
 
@@ -42,7 +50,7 @@ algoritmo "jogo_adivinhacao"
                         
                         se(minusc(resposta) = "sim") entao
 
-                            escreval("? onívoro?")
+                            escreval("É onívoro?")
                             leia(resposta)
 
                             se(minusc(resposta) = "sim") entao
@@ -76,12 +84,12 @@ algoritmo "jogo_adivinhacao"
 
             senao
 
-                escreval("? ave?")
+                escreval("É ave?")
                 leia(resposta)
 
                 se(minusc(resposta) = "sim") entao
 
-                    escreval("? não-voador?")
+                    escreval("É não-voador?")
                     leia(resposta)
 
                     se(minusc(resposta) = "sim") entao
@@ -127,7 +135,7 @@ algoritmo "jogo_adivinhacao"
 
                     senao
 
-                        escreval("? carnivoro?")
+                        escreval("É carnivoro?")
                         leia(resposta)
 
                         se(minusc(resposta) = "sim")
