@@ -110,11 +110,11 @@ algoritmo "signo_zodiaco"
 
                 se (dia > 22) entao
 
-                    escreval("Câncer")
+                    escreval("Leão")
 
                 senao
 
-                    escreval("Leão")
+                    escreval("Câncer")
 
                 fimse
 
