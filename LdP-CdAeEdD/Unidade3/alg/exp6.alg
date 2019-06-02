@@ -22,10 +22,10 @@ algoritmo "valor_pagamento"
         escreval("Informe o valor da prestação")
         leia(valorPrestacao)
 
-        valorFinalParaPagar <- valorPrestacao * 1 + JUROS
-        valorFinalParaPagar <- valorFinalParaPagar * 1 + DESCONTO
+        valorFinalParaPagar <- valorPrestacao * (1 + JUROS)
+        valorFinalParaPagar <- valorFinalParaPagar * (1 - DESCONTO)
 
-        prejuizoDoComerciante <- valorFinalParaPagar - valorPrestacao
+        prejuizoDoComerciante <- valorPrestacao - valorFinalParaPagar
 
         escreval("Valor total para pagar " + numpcarac(valorFinalParaPagar))
         escreval("Prejuizo do comerciante " + numpcarac(prejuizoDoComerciante))
