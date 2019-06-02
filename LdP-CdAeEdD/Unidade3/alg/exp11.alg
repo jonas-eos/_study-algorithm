@@ -130,34 +130,36 @@
                 classificacaoPais3 <- 1
 
             fimse
-
-        se (pontuacaoPais1 > pontuacaoPais3) entao
-
-            classificacaoPais1 <- 2
-            classificacaoPais2 <- 1
-            classificacaoPais3 <- 3
-
+            
         senao
 
-            classificacaoPais1 <- 3
+            se (pontuacaoPais1 > pontuacaoPais3) entao
 
-            se (pontuacaoPais2 > pontuacaoPais3) entao
-
+                classificacaoPais1 <- 2
                 classificacaoPais2 <- 1
-                classificacaoPais3 <- 2
+                classificacaoPais3 <- 3
 
             senao
 
-                classificacaoPais2 <-2
-                classificacaoPais3 <-1
+                classificacaoPais1 <- 3
 
+                se (pontuacaoPais2 > pontuacaoPais3) entao
+
+                    classificacaoPais2 <- 1
+                    classificacaoPais3 <- 2
+
+                senao
+
+                    classificacaoPais2 <- 2
+                    classificacaoPais3 <- 1
+
+                fimse
             fimse
         fimse
-    fimse
 
     escreval("Classifições:")
-    escreval(nomePais1 + " pontuação: " + numpcarac(pontuacaoPais1) + "Posição " + numpcarac(classificacaoPais1) + "ª lugar))
-    escreval(nomePais2 + " pontuação: " + numpcarac(pontuacaoPais2) + "Posição " + numpcarac(classificacaoPais2) + "ª lugar))
-    escreval(nomePais3 + " pontuação: " + numpcarac(pontuacaoPais3) + "Posição " + numpcarac(classificacaoPais3) + "ª lugar))
+    escreval(nomePais1 + " pontuação: " + numpcarac(pontuacaoPais1) + "| Posição " + numpcarac(classificacaoPais1) + "ª lugar")
+    escreval(nomePais2 + " pontuação: " + numpcarac(pontuacaoPais2) + "| Posição " + numpcarac(classificacaoPais2) + "ª lugar")
+    escreval(nomePais3 + " pontuação: " + numpcarac(pontuacaoPais3) + "| Posição " + numpcarac(classificacaoPais3) + "ª lugar")
 
     fimalgoritmo
