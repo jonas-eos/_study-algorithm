@@ -1,40 +1,29 @@
-{* 
- * Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria 
- * qualquer preço.
- * O monge, necessitando de alimentos, perguntou à rainha se o pagamento poderia
- * ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal 
- * forma que o primeiro quadro contivesse apenas um grão e os quadros 
- * subsequentes, o dobro do quadro anterior.
- * A rainha considerou o pagamento barato e pediu que o serviço fosse executado,
- * sem se dar conta de que seria impossível efetuar o pagamento.
- * Faça um algoritmo para calcular o número de grãos que o monge esperava
- * receber.
+{*
+ * A conversão de graus Fahrenheit para centígrados é obtida pela fórmula
+ * C = 5/9(F - 32).
+ * Escreva um algoritmo que calcule e escreva uma tabela de graus centígrados
+ * em função de graus Fahrenheit que variem de 50 a 150 de 1 em 1
 *}
 
-algoritmo "graos_multiplicados"
+algoritmo "coversao_f_c"
+
 const
-   CASA_INICIAL = 1
-   CASAS_XADREX_LINHAS = 8
-   CASAS_XADRES_COLUNAS = 8
-   TOTAL_CASAS_XADRES = CASAS_XADRES_COLUNAS * CASAS_XADREX_LINHAS
-   GRAO_INICIAL = 1
-   MULTIPLICADOR = 2
-   INCREMENTAL = 1
+   FAHRENHEIT_INICIAL = 50
+   FAHRENHEIT_FINAL = 150
+   INCREMENTO = 1
 
 var
-   grao : real
    contador : inteiro
+   convertido : real
 
 inicio
 
-   grao <- GRAO_INICIAL
+   para contador de FAHRENHEIT_INICIAL ate FAHRENHEIT_FINAL passo INCREMENTO faca
 
-   para contador de CASA_INICIAL ate TOTAL_CASAS_XADRES passo INCREMENTAL faca
+      convertido <- (5 / 9) * (contador - 32)
 
-      grao <- grao * MULTIPLICADOR
+      escreval(numpcarac(contador) + "F = " + numpcarac(convertido) + "C")
 
    fimpara
-
-   escreval("A rainha tinha que pagar " + numpcarac(grao) + " grãos")
 
 fimalgoritmo
