@@ -6,26 +6,26 @@
 
 algoritmo "serie"
 const
-   DIVISOR_FINAL = 99
-   DIVIDENDO_FINAL = 50
+   DIVIDENDO_FINAL = 99
+   DIVISOR_FINAL = 50
    NUMERO_INICIAL = 1
    INCREMENTO_DIVISOR = 2
    INCREMENTO_DIVIDENDO = 1
 
 var
    h : real
-   divisor : inteiro
    dividendo : inteiro
+   divisor : inteiro
 inicio
-   divisor <-  NUMERO_INICIAL
-   dividendo <- NUMERO_INICIAL
-   h <- divisor / dividendo
+   dividendo <-  NUMERO_INICIAL
+   divisor <- NUMERO_INICIAL
+   h <- dividendo / divisor
 
    repita
-      divisor <- divisor + INCREMENTO_DIVISOR
-      dividendo <- dividendo + INCREMENTO_DIVIDENDO
-      h <- h + (divisor / dividendo)
-   ate (divisor = DIVISOR_FINAL) e (dividendo = DIVIDENDO_FINAL)
+      dividendo <- dividendo + INCREMENTO_DIVISOR
+      divisor <- divisor + INCREMENTO_DIVIDENDO
+      h <- h + (dividendo / divisor)
+   ate (dividendo = DIVIDENDO_FINAL) e (divisor = DIVISOR_FINAL)
 
    escreval("Resultado final: ", h)
 fimalgoritmo
