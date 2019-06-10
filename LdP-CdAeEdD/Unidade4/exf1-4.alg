@@ -36,9 +36,8 @@ inicio
             indiceMenorValor <- indicePosterior
          fimse
       fimpara        {* percorrendo indice posterior *}
-      auxiliar <- numeros[indice]
+      numeros[indiceMenorValor] <- numeros[indice]
       numeros[indice] <- menorValor
-      numeros[indiceMenorValor] <- auxiliar
    fimpara        {* percorrendo indice principal *}
 
    para indice de INDICE_INICIAL ate INDICE_FINAL passo INCREMENTAL faca
